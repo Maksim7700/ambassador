@@ -3,11 +3,16 @@ import Container from '../UI/Container';
 import Wrapper from '../UI/Wrapper';
 import logo from '../images/logo.svg';
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 const NavBar = () => {
 
   const history = useHistory();
+
+  const [menu, setMenu] = useState(false);
+  const openCloseMenu = () => {
+    setMenu(!menu);
+  }
 
   const navigateTo = (path) => {
     history.push(path);
@@ -32,7 +37,7 @@ const NavBar = () => {
 
   return (
     <Wrapper className={`${history.location.pathname === '/ambassador' ? '': 'c-112087'} header`}>
-    <Container>
+    <Container className='header-mobile'>
       <nav>
         <ul>
           <li onClick={() => navigateTo('/ambassador')}><img src={logo} alt='Abmassador'></img></li>
@@ -43,7 +48,14 @@ const NavBar = () => {
           <li onClick={() => navigateTo('/ambassador')}><Text family='Unbounded' weight={700}>Стати Амбасадором</Text></li>
           <li className='b-subscribe' onClick={() => navigateTo('/subscribe')}><Text family='Unbounded' weight={700}>Отримати Підписку</Text></li>
         </ul>
+      <label style={{color: 'white'}} className={`navbar-toggler ${menu ? '' : 'margin-top-more'}`} onClick={openCloseMenu}>
+          <span className={`bar-toggle ${!menu ? '' : 'bar-1'}`}></span>
+          <span className={`bar-toggle ${!menu ? '' : 'bar-2'}`}></span>
+          <span className={`bar-toggle ${!menu ? '' : 'bar-3'}`}></span>
+        </label>
       </nav>
+
+
     </Container>
     </Wrapper>
   )

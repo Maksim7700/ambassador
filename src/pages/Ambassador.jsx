@@ -14,9 +14,9 @@ const Abmassador = () => {
   return (
     <Wrapper>
         <Wrapper className='ambassador'>
-          <Container>
+          <Container className='mp-16'>
             <Text className='ambassador-finance m-b-64' family='Unbounded' weight={700}>
-              ОТРИМАЙ ФІНАНСУВАННЯ НА ПІДТРИМКУ СВОГО ПРОЄКТУ
+              ОТРИМАЙ ФІНАНСУВАННЯ НА ВТІЛЕННЯ ВЛАСНОГО ПРОЕКТУ
             </Text>
             <div className='p-b-64'>
               <img src={grand} alt="Грантова програма"></img>
@@ -39,9 +39,9 @@ const Abmassador = () => {
       </Wrapper>
       <Wrapper className='target-container'>
         <Wrapper className='mp-16'>
-        <Container>
+        <Container className='target-area'>
           <Text className='target' family='Unbounded' weight={700}>ТЕМАТИЧНІ НАПРЯМКИ ПРОЕКТІВ</Text>
-            <div className='d-flex gap-16'>
+            <div className='target-cards gap-16'>
               <Card logo={'images/target1.svg'} title={'Освіта'} descs={['Неформальна освіта', "Ініціативи, пов'язані зі змінами традиційної системи освіти"]}/>
               <Card logo={'images/target2.svg'} title={'Культура і культ. спадщина'} descs={['Виставки', "Мурали", "Просвітницькі події", "Популяризація культурної спадщини міста", "Реставрація тощо"]}/>
               <Card logo={'images/target3.svg'} title={'Урбаністика'} descs={['Розвиток міського середовища', "Зелені зони", "Тактичний урбанізм тощо"]}/>

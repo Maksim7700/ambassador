@@ -11,6 +11,7 @@ const Step = (props) => {
         <div className={!isLast ? `line` : ''}></div>
         </div>
         <div className='step-desc'>
+          <div className='date'><Text family='Mulish' weight={500}>{date}</Text></div>
           <div>
             <Text family='Unbounded' weight={700}>{step} <br/> {title}</Text>
           </div>

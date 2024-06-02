@@ -11,6 +11,7 @@ const Partners = () => {
               <div className='logo'><img src='images/logo1.svg' alt='logo'></img></div>
               <div className='logo'><img src='images/logo2.svg' alt='logo'></img></div>
               <div className='logo'><img src='images/logo1.svg' alt='logo'></img></div>
+              <div className='logo'><img src='images/logo2.svg' alt='logo'></img></div>
               </div>
         </div>
     )

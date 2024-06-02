@@ -10,17 +10,19 @@ import Footer from '../components/Footer';
 const Subscribe = () => {
   return (
     <Wrapper>
-      <Wrapper className='p-150 ambassador b-112087'>
-        <Container>
+      <Wrapper className='p-64 ambassador b-112087'>
+        <Wrapper className='mp-16'>
+        <Container className='containter-sub-top'>
         <Text className='ambassador-finance' family='Unbounded' weight={700}>
               ДОЛУЧИСЬ ДО РОЗВИТКУ МІСТА
             </Text>
-            <div className='p-b-64'>
+            <div>
               <img src={grand} alt="Грантова програма"></img>
             </div>
         </Container>
+        </Wrapper>
       </Wrapper>
-      <Wrapper className='p-150 about-grand'>
+      <Wrapper className='about-grand'>
           <Wrapper className='about-grand-background mp-16'>
             <Container className='about-grand-containte'>
               <Text className='about-grand-title c-112087' family='Unbounded' weight={700}>
@@ -29,31 +31,35 @@ const Subscribe = () => {
               <Text className='about-grand-title' family='Unbounded' weight={700}>
               <span className='c-2b2624'>ЦЕ СПІЛЬНОТА ЛЮДЕЙ,</span>
               </Text>
-              <Text className='c-2b2624 m-t-32 f-s-40 l-h-60' family='Unbounded' weight={700}>
+              <Text className='subscribe-support c-2b2624 m-t-32 f-s-40 l-h-60' family='Unbounded' weight={700}>
                   ЯКІ ОБʼЄДНАЛИСЯ ДЛЯ ПІДТРИМКИ ПРОЄКТІВ РОЗВИТКУ <span className='c-112087'>ДРОГОБИЧА</span>
               </Text>
             </Container>
           </Wrapper>
       </Wrapper>
       <Wrapper className='p-150 ambassador b-112087'>
-        <Container>
+        <Wrapper className='mp-16'>
+        <Container className='progress-container-block'>
         <Text className='ambassador-finance' family='Unbounded' weight={700}>
         МИ ШУКАЄМО 100 ЛЮДЕЙ, ЯКІ ЗМІНЮВАТИМУТЬ ДРОГОБИЧ
             </Text>
             <div>
               <img src={'./images/100.svg'} alt="Грантова програма"></img>
             </div>
+            <div>
             <progress style={{width: '100%', height: '17px'}} value="85" max="100" />
-            <Text className='m-t-32 f-s-20 l-h-30' family='Unbounded' weight={700}>85 із 100 вже з нами</Text>
+            <Text className='progress-desc m-t-32 f-s-20 l-h-30' family='Unbounded' weight={700}>85 із 100 вже з нами</Text>
+            </div>
         </Container>
+        </Wrapper>
       </Wrapper>
       <Wrapper className='b-faeddd target-container p-150'>
         <Wrapper className='mp-16'>
         <Container>
-          <Text className='m-b-64 f-s-64 l-h-96 c-2b2624' family='Unbounded' weight={700}>
+          <Text className=' target-subscribe-title m-b-64 f-s-64 l-h-96 c-2b2624' family='Unbounded' weight={700}>
             ДОЛУЧИТИСЬ ДО АМБАСАДОРІВ
           </Text>
-          <div className='d-flex gap-16 j-c-center'>
+          <div className='target-subscribe-box d-flex gap-16 j-c-center'>
             <CardSubscribe title={'Місячна підписка'} price={'200 грн'} values={[
               'Підписка складає 200 грн на місяць;',
               'Двічі на рік менеджерська команда на сайті проєкту публікує звіт щодо грантових сезонів;',
@@ -79,14 +85,18 @@ const Subscribe = () => {
         </Wrapper>
       </Wrapper>
       <Wrapper className='p-150 ambassador b-112087'>
+        <Wrapper className='mp-16'>
 
         <Container>
         <div className='projects c-faeddd f-s-64 l-h-96 m-b-64'><Text family='Unbounded' weight={700}>ЯКІ ПРОЄКТИ БУЛИ ПІДТРИМАНІ?</Text></div>
         <div style={{textAlign: 'center'}} className='p-64 c-faeddd project-box'><Text family='Unbounded' weight={700}>Зовсім скоро тут з*являться перші проєкти</Text></div>
         </Container>
+        </Wrapper>
       </Wrapper>
 
-      <Wrapper className='p-150 b-faeddd'>
+      <Wrapper className='p-150 b-faeddd sub-accept'>
+        <Wrapper className='mp-16'>
+
         <Container>
         <Text className='ambassador-finance c-2b2624 t-a-center' family='Unbounded' weight={700}>
         ЯК ПОДАТИСЬ?
@@ -101,6 +111,7 @@ const Subscribe = () => {
       </div>
     </div>
         </Container>
+        </Wrapper>
         </Wrapper>
 
         <Wrapper className='q b-112087'>
