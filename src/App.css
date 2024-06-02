@@ -1123,9 +1123,9 @@ hr {
   }
 
   .accept-desc {
-    margin: 24px 16px 16px 16px;
+    margin: 24px 0 16px 0;
     gap: 8px;
-    width: 95%;
+    width: 100%;
   }
 
   .contact div:nth-child(1) {
@@ -1167,7 +1167,7 @@ hr {
 
 
   .accept-buttons {
-    margin: 0 16px 24px 16px;
+    margin: 0 0 24px 0;
     flex-direction: column;
   }
   .accept-buttons button {
@@ -1207,6 +1207,10 @@ hr {
 
   .containter-sub-top{
     gap: 32px
+  }
+
+  .accept-info-inside-box {
+    padding: 0 16px;
   }
 
   .ad {
