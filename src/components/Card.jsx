@@ -1,5 +1,3 @@
-import { Text } from 'react-font';
-
 const Card = (props) => {
 
   const { title, descs, logo } = props;
@@ -10,10 +8,10 @@ const Card = (props) => {
         <div className={`card-logo`}>
           <img src={logo} alt='Abmassador'/>
         </div>
-        <div className={`card-title`}><Text family='Unbounded' weight={700}>{title}</Text></div>
+        <div className={`card-title`}><div className='unbounded-700'>{title}</div></div>
       </div>
       <div className={`card-desc  `}>
-      {descs.map((desc, index) => <div key={index}><Text family='Mulish' weight={400}>&#8226; {desc}</Text></div>)}
+      {descs.map((desc, index) => <div key={index}><div className='mulish-400'>&#8226; {desc}</div></div>)}
       </div>
     </div>
   )

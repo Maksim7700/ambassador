@@ -1,22 +1,20 @@
-import { Text } from 'react-font'
-
 const Step = (props) => {
   const {isLast, date, step, title, desc} = props;
   return (
     <div className={`step-block ${isLast ? 'step-block-last' : ''}`}>
-        <div className='step-date'><Text family='Mulish' weight={400}>{date}</Text></div>
+        <div className='step-date'><div className='mulish-400'>{date}</div></div>
         <div className='symbol'>
         <div className={`${props.className}`}>
         </div>
         <div className={!isLast ? `line` : ''}></div>
         </div>
         <div className='step-desc'>
-          <div className='date'><Text family='Mulish' weight={500}>{date}</Text></div>
+          <div className='date'><div family='Mulish' weight={500}>{date}</div></div>
           <div>
-            <Text family='Unbounded' weight={700}>{step} <br/> {title}</Text>
+            <div className='unbounded-700'>{step} <br/> {title}</div>
           </div>
           {!isLast && <div>
-            <Text family='Mulish' weight={400}>{desc}</Text>
+            <div className='mulish-400'>{desc}</div>
           </div>}
         </div>
       </div>

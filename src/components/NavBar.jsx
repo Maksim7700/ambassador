@@ -1,4 +1,3 @@
-import { Text } from 'react-font';
 import Container from '../UI/Container';
 import Wrapper from '../UI/Wrapper';
 import logo from '../images/logo.svg';
@@ -41,12 +40,12 @@ const NavBar = () => {
       <nav>
         <ul>
           <li onClick={() => navigateTo('/ambassador')}><img src={logo} alt='Abmassador'></img></li>
-          <li><Text family='Unbounded' weight={700}>Грантова Програма</Text></li>
-          <li><Text family='Unbounded' weight={700}>Амбасадори</Text></li>
+          <li><div className='unbounded-700'>Грантова Програма</div></li>
+          <li><div className='unbounded-700'>Амбасадори</div></li>
         </ul>
         <ul>
-          <li onClick={() => navigateTo('/ambassador')}><Text family='Unbounded' weight={700}>Стати Амбасадором</Text></li>
-          <li className='b-subscribe' onClick={() => navigateTo('/subscribe')}><Text family='Unbounded' weight={700}>Отримати Підписку</Text></li>
+          <li onClick={() => navigateTo('/ambassador')}><div className='unbounded-700'>Стати Амбасадором</div></li>
+          <li className='b-subscribe' onClick={() => navigateTo('/subscribe')}><div className='unbounded-700'>Отримати Підписку</div></li>
         </ul>
       <label style={{color: 'white'}} className={`navbar-toggler ${menu ? '' : 'margin-top-more'}`} onClick={openCloseMenu}>
           <span className={`bar-toggle ${!menu ? '' : 'bar-1'}`}></span>
