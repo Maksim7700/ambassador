@@ -6,7 +6,6 @@ import { useEffect, useState } from 'react';
 import MobileHeader from './MobileHeader';
 
 const NavBar = () => {
-
   const history = useHistory();
 
   const [menu, setMenu] = useState(false);
@@ -16,6 +15,9 @@ const NavBar = () => {
 
   const navigateTo = (path) => {
     history.push(path);
+    window.scrollTo({
+      top: 0
+    });
     if(path === '/ambassador'){
       document.querySelector('.header').classList.remove('b-112087');
       document.querySelector('.b-subscribe').classList.remove('c-112087');
@@ -34,7 +36,17 @@ const NavBar = () => {
       document.querySelector('.header').classList.add('b-112087');
       document.querySelector('.b-subscribe').classList.add('c-112087');
     }
-  }, [history.location.pathname])
+  }, [history.location.pathname]);
+
+  const changeBackground = () => {
+    if (window.scrollY > 50) {
+      document.querySelector('.main').classList.add('box-shadow-header');
+  } else {
+      document.querySelector('.main').classList.remove('box-shadow-header');
+  }
+  }
+  window.addEventListener('scroll', changeBackground);
+
 
   return (
     <Wrapper className={`main ${history.location.pathname === '/ambassador' ? '': 'c-112087'} header`}>

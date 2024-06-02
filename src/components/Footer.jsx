@@ -36,7 +36,7 @@ const Footer = () => {
         </div>
         <hr/>
         <div className='ad'>
-          <div className='security'><div family='Montserrat' weight={400}>© 2024 Амбасадори Дрогобича. Всі права захищено. Політика конфіденційності.</div></div>
+          <div className='security'><div family='Montserrat' weight={400}>© 2024 Амбасадори Дрогобича. Всі права захищено. <b><u>Політика конфіденційності.</u></b></div></div>
           <div className='project'>
             <div><div family='Montserrat' weight={400}>Проект надихнувся:</div></div>
             <div><img src='images/footer-logo.svg' alt='footer-logo'/></div>

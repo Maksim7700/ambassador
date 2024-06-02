@@ -37,6 +37,9 @@
   width: 100%;
   height: 78px;
   background: #FFF;
+}
+
+.box-shadow-header {
   box-shadow: 0px 0px 10px 0px rgba(157, 157, 157, 0.15);
 }
 
@@ -368,11 +371,11 @@ progress::-webkit-progress-value {
 .accept-info {
   margin-top: 64px;
   display: flex;
-  border: 1px solid #FAEDDD;
+  border: 1px solid rgba(250, 237, 221, 0.5);
 }
 
 .border-122087 {
-  border: 1px solid #112087;
+  border: 1px solid rgba(17, 32, 135, 0.5);
 }
 .w-100 {
   width: 100%;
@@ -385,7 +388,7 @@ progress::-webkit-progress-value {
 }
 
 .project-box {
-  border: 1px solid #FAEDDD;
+  border: 1px solid rgba(250, 237, 221, 0.5);
 }
 
 .t-a-center {
@@ -467,7 +470,7 @@ progress::-webkit-progress-value {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  border: 1px solid #AD4A27;
+  border: 1px solid rgba(173, 74, 39, 0.5);
   width: 100%;
   padding: 20px;
 }
@@ -947,7 +950,7 @@ hr {
 }
 
 .card-subscribe {
-  border: 1px solid #112087;
+  border: 1px solid rgba(17, 32, 135, 0.5);
   width: 50%;
 }
 
@@ -1332,7 +1335,7 @@ hr {
 
   .col {
     padding: 0 !important;
-    border-right: 1px solid #AD4A27 !important;
+    border-right: 1px solid rgba(173, 74, 39, 0.5) !important;
   }
 }
 
