@@ -10,11 +10,11 @@ const Step = (props) => {
         </div>
         <div className='step-desc'>
           <div className='date'><div family='Mulish' weight={500}>{date}</div></div>
-          <div>
+          <div className='date-2'>
             <div className='unbounded-700'>{step} <br/> {title}</div>
           </div>
-          {!isLast && <div>
-            <div className='mulish-400'>{desc}</div>
+          {!isLast && <div className='last'>
+            <div className='c-464442 mulish-400'>{desc}</div>
           </div>}
         </div>
       </div>

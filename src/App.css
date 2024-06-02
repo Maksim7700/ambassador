@@ -15,6 +15,31 @@
   font-style: normal;
 }
 
+.c-464442 {
+  color: #464442 !important;
+}
+
+.date-2 {
+  padding-top: 0 !important;
+}
+
+.mobile-menu-list {
+  background-color: #AD4A27;
+  padding-top: 32px;
+  width: 100%;
+  height: 100px;
+}
+
+.main {
+  z-index: 999;
+  position:sticky;
+  top: 0;
+  width: 100%;
+  height: 78px;
+  background: #FFF;
+  box-shadow: 0px 0px 10px 0px rgba(157, 157, 157, 0.15);
+}
+
 .accept-info-inside-box {
   display: flex;
 }
@@ -407,6 +432,10 @@ progress::-webkit-progress-value {
   margin: 0 16px;
 }
 
+.b-n {
+  border: none;
+}
+
 .assesment {
   padding-top: 150px;
   padding-bottom: 150px;
@@ -482,40 +511,68 @@ progress::-webkit-progress-value {
   font-size: 18px;
   line-height: 27px;
   color: #FFFFFF;
+  padding-top: 0px !important;
 }
 
 .none {
-  display: none;
+  display: none !important;
 }
 
 .pb-20 {
   padding-bottom: 20px;
 }
 
-.question {
+.button-q {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.part-1 {
+  display: flex !important;
+  flex-direction: row !important;
   justify-content: space-between;
-  border-bottom: 1px solid #FAEDDD;
+}
+
+
+
+.question {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid rgba(250, 237, 221, 0.5);
+
   height: auto;
 }
 
+.path-112087 svg path {
+  fill: #112087;
+}
+
+.con {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
 
 .question button {
   border: none;
   width: 32px;
   height: 32px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .q-button {
   display: flex;
   flex-direction: column;
-  padding-top: 10px
+  padding-top: 30px
 }
 
 .question div:nth-child(1) {
-  padding-top: 10px;
-  padding-bottom: 10px;
   display: flex;
   flex-direction: column;
 }
@@ -644,6 +701,9 @@ hr {
   justify-content: center;
 }
 
+.last {
+  padding-bottom: 32px;
+}
 .project div:nth-child(2) {
   font-size: 16px;
   line-height: 19.5px;
@@ -755,8 +815,8 @@ hr {
 }
 
 .step-desc div:nth-child(2) {
-  padding-top: 16px;
-  padding-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 16px;
   color: #464442;
   font-size: 18px;
   line-height: 27px;
@@ -987,7 +1047,7 @@ hr {
 
   .target-subscribe-box {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(auto, 1fr));
   }
   .card-subscribe{
     padding-left: 0 !important;
@@ -1030,6 +1090,14 @@ hr {
 
   nav ul li:nth-child(3) {
     display: none;
+  }
+
+  .last {
+    padding-top: 0 !important;
+  }
+
+  .date-2 {
+    padding-bottom: 16px !important;
   }
 
   .header-mobile {
@@ -1078,7 +1146,7 @@ hr {
   }
 
   .step-block {
-    grid-template-columns: minmax(10px, 20px) auto 4fr
+    grid-template-columns: minmax(10px, 20px) auto 4fr;
   }
 
   .date {
@@ -1092,13 +1160,14 @@ hr {
     font-size: 18px;
     line-height: 27px;
     color: #AD4A27;
+
   }
 
   .step-desc div:nth-child(2) {
     font-size: 20px;
     line-height: 30px;
     color: #AD4A27;
-    padding: 0;
+    padding-bottom: 32px;
   }
 
 
@@ -1147,8 +1216,6 @@ hr {
     flex-direction: column;
     gap: 12px;
   }
-
-
 
   .assesment {
     padding-top: 64px;
@@ -1245,6 +1312,11 @@ hr {
   font-size: 30px;
   line-height: 45px;
   padding-bottom: 32px;
+}
+
+.con {
+  font-size: 20px;
+  line-height: 28px;
 }
 
   .mobile-col {

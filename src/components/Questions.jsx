@@ -7,13 +7,13 @@ const Questions = (props) => {
   const {title, desc} = props;
 
   return (
-    <div className={`question `}>
-      <div>
+    <div className={`question `} onClick={() => setIsOpen(!isOpen)}>
+      <div className='part-1'>
         <div className='q-text'><div className='unbounded-700'>{title}</div></div>
-        <div className={`q-desc ${isOpen ? '' : 'none'}`}><div className='mulish-400'>{isOpen && desc}</div></div>
+        <div className='button-q'><button className={`${isOpen ? 'transparent-button' : ''}`}><img src={`${!isOpen ? '../images/plus.svg' : '../images/minus.svg'}`} alt='INFO' /></button></div>
       </div>
-      <div className='q-button'>
-      <button className={`${isOpen ? 'transparent-button' : ''}`} onClick={() => setIsOpen(!isOpen)}>{!isOpen ? '+' : '-'}</button>
+      <div className='part2'>
+      <div className={`q-desc ${isOpen ? '' : 'none'}`}><div className='mulish-400'>{isOpen && desc}</div></div>
       </div>
     </div>
   );

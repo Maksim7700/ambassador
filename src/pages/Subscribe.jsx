@@ -106,13 +106,12 @@ const Subscribe = () => {
       </div>
       <div className='accept-buttons'>
         <button style={{border: '1px solid #112087'}} className='c-112087'><div className='unbounded-700'>Офіційні Правила</div></button>
-        <button style={{border: 'none'}} className='b-112087 c-faeddd'><div className='unbounded-700'>Отримати Підписку</div></button>
+        <button style={{border: 'none'}} className='b-112087 c-faeddd'><div className='unbounded-700'>Стати Амбасадором</div></button>
       </div>
     </div>
         </Container>
         </Wrapper>
         </Wrapper>
-
         <Wrapper className='q b-112087'>
         <Wrapper className='mp-16'>
           <Container>

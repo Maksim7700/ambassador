@@ -11,7 +11,7 @@ const Accept = () => {
       </div>
       <div className='accept-buttons'>
         <button><div className='unbounded-700'>Офіційні Правила</div></button>
-        <button><div className='unbounded-700'>Отримати Підписку</div></button>
+        <button><div className='unbounded-700'>Отримати Підтримку</div></button>
       </div>
       </div>
     </div></>
