@@ -15,7 +15,7 @@ const Abmassador = () => {
         <Wrapper className='ambassador'>
           <Wrapper className=' mp-16'>
           <Container>
-            <div className='ambassador-finance m-b-64 unbounded-700'>
+            <div className='word-wrap-example ambassador-finance m-b-64 unbounded-700'>
               ОТРИМАЙ ФІНАНСУВАННЯ НА ВТІЛЕННЯ ВЛАСНОГО ПРОЕКТУ
             </div>
             <div className='p-b-64'>
