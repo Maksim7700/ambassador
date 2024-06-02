@@ -15,6 +15,10 @@
   font-style: normal;
 }
 
+.accept-info-inside-box {
+  display: flex;
+}
+
 .mulish-400 {
   font-family: "Mulish", sans-serif;
   font-optical-sizing: auto;
@@ -1128,6 +1132,11 @@ hr {
     width: 100%;
   }
 
+
+.accept-desc-inside-box {
+
+}
+
   .contact div:nth-child(1) {
     display: flex;
     justify-content: center;
@@ -1210,6 +1219,9 @@ hr {
   }
 
   .accept-info-inside-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     padding: 0 16px;
   }
 
