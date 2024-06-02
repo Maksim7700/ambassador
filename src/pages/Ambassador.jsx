@@ -14,7 +14,8 @@ const Abmassador = () => {
   return (
     <Wrapper>
         <Wrapper className='ambassador'>
-          <Container className='mp-16'>
+          <Wrapper className=' mp-16'>
+          <Container>
             <Text className='ambassador-finance m-b-64' family='Unbounded' weight={700}>
               ОТРИМАЙ ФІНАНСУВАННЯ НА ВТІЛЕННЯ ВЛАСНОГО ПРОЕКТУ
             </Text>
@@ -22,6 +23,7 @@ const Abmassador = () => {
               <img src={grand} alt="Грантова програма"></img>
             </div>
           </Container>
+          </Wrapper>
         </Wrapper>
         <Wrapper className='about-grand'>
           <Wrapper className='about-grand-background mp-16'>
