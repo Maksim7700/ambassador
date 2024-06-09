@@ -5,17 +5,25 @@ import CardSubscribe from '../components/CardSubscribe';
 import Questions from '../components/Questions';
 import Partners from '../components/Partners';
 import Footer from '../components/Footer';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const Subscribe = () => {
+
+  useEffect(() => {
+    AOS.init();
+  });
+
   return (
     <Wrapper>
       <Wrapper className='p-64 ambassador b-112087'>
         <Wrapper className='mp-16'>
         <Container className='containter-sub-top'>
-        <div className='ambassador-finance unbounded-700'>
+        <div data-aos='fade-up' className='ambassador-finance unbounded-700'>
               ДОЛУЧИСЬ ДО РОЗВИТКУ МІСТА
             </div>
-            <div>
+            <div data-aos='fade-up'>
               <img src={grand} alt="Грантова програма"></img>
             </div>
         </Container>
@@ -24,13 +32,13 @@ const Subscribe = () => {
       <Wrapper className='about-grand'>
           <Wrapper className='about-grand-background mp-16'>
             <Container className='about-grand-containte'>
-              <div className='about-grand-title c-112087 unbounded-700'>
-              АМБАСАДОРИ ДРОГОБИЧА —
+              <div data-aos='fade-up' className='about-grand-title c-112087 unbounded-700'>
+              АМБАСАДОРИ ДРОГОБИЧА -
               </div>
-              <div className='about-grand-title unbounded-700'>
-              <span className='c-2b2624'>ЦЕ СПІЛЬНОТА ЛЮДЕЙ,</span>
+              <div data-aos='fade-up' className='about-grand-title unbounded-700'>
+              <span data-aos='fade-up' className='c-2b2624'>ЦЕ СПІЛЬНОТА ЛЮДЕЙ,</span>
               </div>
-              <div className='subscribe-support c-2b2624 m-t-32 f-s-40 l-h-60 unbounded-700'>
+              <div data-aos='fade-up' className='subscribe-support c-2b2624 m-t-32 f-s-40 l-h-60 unbounded-700'>
                   ЯКІ ОБʼЄДНАЛИСЯ ДЛЯ ПІДТРИМКИ ПРОЄКТІВ РОЗВИТКУ <span className='c-112087'>ДРОГОБИЧА</span>
               </div>
             </Container>
@@ -39,15 +47,15 @@ const Subscribe = () => {
       <Wrapper className='p-150 ambassador b-112087'>
         <Wrapper className='mp-16'>
         <Container className='progress-container-block'>
-        <div className='ambassador-finance unbounded-700'>
+        <div data-aos='fade-up' className='ambassador-finance unbounded-700'>
         МИ ШУКАЄМО 100 ЛЮДЕЙ, ЯКІ ЗМІНЮВАТИМУТЬ ДРОГОБИЧ
             </div>
-            <div>
+            <div data-aos='fade-up'>
               <img src={'./images/100.svg'} alt="Грантова програма"></img>
             </div>
-            <div>
+            <div data-aos='fade-up'>
             <progress style={{width: '100%', height: '17px'}} value="85" max="100" />
-            <div className='progress-desc m-t-32 f-s-20 l-h-30 unbounded-700'>85 із 100 вже з нами</div>
+            <div data-aos='fade-up' className='progress-desc m-t-32 f-s-20 l-h-30 unbounded-700'>85 із 100 вже з нами</div>
             </div>
         </Container>
         </Wrapper>
@@ -55,10 +63,10 @@ const Subscribe = () => {
       <Wrapper className='b-faeddd target-container p-150'>
         <Wrapper className='mp-16'>
         <Container>
-          <div className=' target-subscribe-title m-b-64 f-s-64 l-h-96 c-2b2624 unbounded-700'>
+          <div data-aos='fade-up' className=' target-subscribe-title m-b-64 f-s-64 l-h-96 c-2b2624 unbounded-700'>
             ДОЛУЧИТИСЬ ДО АМБАСАДОРІВ
           </div>
-          <div className='target-subscribe-box d-flex gap-16 j-c-center'>
+          <div data-aos='fade-up' className='target-subscribe-box d-flex gap-16 j-c-center'>
             <CardSubscribe title={'Місячна підписка'} price={'200 грн'} values={[
               'Підписка складає 200 грн на місяць;',
               'Двічі на рік менеджерська команда на сайті проєкту публікує звіт щодо грантових сезонів;',
@@ -87,8 +95,8 @@ const Subscribe = () => {
         <Wrapper className='mp-16'>
 
         <Container>
-        <div className='projects c-faeddd f-s-64 l-h-96 m-b-64'><div className='unbounded-700'>ЯКІ ПРОЄКТИ БУЛИ ПІДТРИМАНІ?</div></div>
-        <div style={{textAlign: 'center'}} className='p-64 c-faeddd project-box'><div className='unbounded-700'>Зовсім скоро тут з*являться перші проєкти</div></div>
+        <div data-aos='fade-up' className='projects c-faeddd f-s-64 l-h-96 m-b-64'><div className='unbounded-700'>ЯКІ ПРОЄКТИ БУЛИ ПІДТРИМАНІ?</div></div>
+        <div data-aos='fade-up' style={{textAlign: 'center'}} className='p-64 c-faeddd project-box'><div className='unbounded-700'>Зовсім скоро тут з*являться перші проєкти</div></div>
         </Container>
         </Wrapper>
       </Wrapper>
@@ -97,14 +105,14 @@ const Subscribe = () => {
         <Wrapper className='mp-16'>
 
         <Container>
-        <div className='ambassador-finance c-2b2624 t-a-center unbounded-700'>
+        <div data-aos='fade-up' className='ambassador-finance c-2b2624 t-a-center unbounded-700'>
         ЯК ПОДАТИСЬ?
             </div>
-            <div className='accept-info border-122087'>
-      <div className='accept-desc'>
+            <div data-aos='fade-up' className='accept-info border-122087'>
+      <div data-aos='fade-up' className='accept-desc'>
         <div className='c-112087'><div className='unbounded-700'>Більше про те, як функціонують Амбасадори тут</div></div>
       </div>
-      <div className='accept-buttons'>
+      <div data-aos='fade-up' className='accept-buttons'>
         <button style={{border: '1px solid #112087'}} className='c-112087'><div className='unbounded-700'>Офіційні Правила</div></button>
         <button style={{border: 'none'}} className='b-112087 c-faeddd'><div className='unbounded-700'>Стати Амбасадором</div></button>
       </div>
@@ -115,7 +123,7 @@ const Subscribe = () => {
         <Wrapper className='q b-112087'>
         <Wrapper className='mp-16'>
           <Container>
-            <div className='q-title'><div className='unbounded-700'>ПОШИРЕНІ ЗАПИТАННЯ</div></div>
+            <div data-aos='fade-up' className='q-title'><div className='unbounded-700'>ПОШИРЕНІ ЗАПИТАННЯ</div></div>
             <Questions title='Звідки беруться кошти на ґранти?' desc='Ця хвиля відбувається за фінасової підтримки National endowment for democracy в рамках проєкту «Посилення громадянської активності та місцевої демократії»'/>
             <Questions title='Чи може одна людина подавати свій проєкт?' desc='Фінансовий фонд формується із благодійних внесків Амбасадорів і Амбасадорок Дрогобича.'/>
             <Questions title='Якщо у мене немає громадської організації, чи можу я отримати ґрант?' desc='Фінансовий фонд формується із благодійних внесків Амбасадорів і Амбасадорок Дрогобича.'/>

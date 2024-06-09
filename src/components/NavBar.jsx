@@ -36,7 +36,7 @@ const NavBar = () => {
       document.querySelector('.header').classList.add('b-112087');
       document.querySelector('.b-subscribe').classList.add('c-112087');
     }
-  }, [history.location.pathname]);
+  }, [history.location]);
 
   const changeBackground = () => {
     if (window.scrollY > 50) {
@@ -55,7 +55,7 @@ const NavBar = () => {
         <ul>
           <li onClick={() => navigateTo('/ambassador')}><img src={logo} alt='Abmassador'></img></li>
           <li><div onClick={() => navigateTo('/ambassador')} className='unbounded-700'>Грантова Програма</div></li>
-          <li><div onClick={() => navigateTo('/subscribe')}className='unbounded-700'>Амбасадори</div></li>
+          <li><div onClick={() => navigateTo('/subscribe')}className='unbounded-700'>Амбасадори Дрогобича</div></li>
         </ul>
         <ul>
           <li ><div className='unbounded-700'>Стати Амбасадором</div></li>

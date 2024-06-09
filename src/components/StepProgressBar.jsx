@@ -1,9 +1,16 @@
 import Step from './Step';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const StepProgressBar = () => {
 
+  useEffect(() => {
+    AOS.init();
+  });
+
   return (
-    <div className="step-progress-bar">
+    <div data-aos='fade-up' className="step-progress-bar">
       <div className='step-title'>
         <div className='unbounded-700'>ЧАСОВІ РАМКИ</div>
       </div>

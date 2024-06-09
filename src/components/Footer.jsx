@@ -1,11 +1,18 @@
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const Footer = () => {
+
+  useEffect(() => {
+    AOS.init();
+  });
 
   const history = useHistory();
   return (
     <footer>
-      <div className='footer-title'>
+      <div data-aos='fade-up' className='footer-title'>
         <img src='images/sb-dr.svg' alt='Logo'/>
       </div>
       <div>
@@ -36,13 +43,13 @@ const Footer = () => {
         </div>
         <hr/>
         <div className='ad'>
-          <div className='security'><div family='Montserrat' weight={400}>© 2024 Амбасадори Дрогобича. Всі права захищено. <b><u>Політика конфіденційності.</u></b></div></div>
+          <div className='security'><div family='mulish-400'>© 2024 Амбасадори Дрогобича. Всі права захищено. <b><u>Політика конфіденційності.</u></b></div></div>
           <div className='project'>
-            <div><div family='Montserrat' weight={400}>Проект надихнувся:</div></div>
+            <div><div family='mulish-400'>Проект надихнувся:</div></div>
             <div><img src='images/footer-logo.svg' alt='footer-logo'/></div>
           </div>
           <div className='dev'>
-            <div><div family='Montserrat' weight={400}>Дизайн та розробка:</div></div>
+            <div><div family='mulish-400'>Дизайн та розробка:</div></div>
             <div>
               <img src='images/bigshare.svg' alt='Logo'/>
             </div>
