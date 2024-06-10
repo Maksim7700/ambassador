@@ -54,12 +54,12 @@ const NavBar = () => {
       <nav>
         <ul>
           <li onClick={() => navigateTo('/ambassador')}><img src={logo} alt='Abmassador'></img></li>
-          <li><div onClick={() => navigateTo('/ambassador')} className='unbounded-700'>Грантова Програма</div></li>
-          <li><div onClick={() => navigateTo('/subscribe')}className='unbounded-700'>Амбасадори Дрогобича</div></li>
+          <li><div onClick={() => navigateTo('/ambassador')} className='cursor unbounded-700'>Грантова Програма</div></li>
+          <li><div onClick={() => navigateTo('/subscribe')}className='cursor unbounded-700'>Амбасадори Дрогобича</div></li>
         </ul>
         <ul>
-          <li ><div className='unbounded-700'>Стати Амбасадором</div></li>
-          <li className='b-subscribe' ><div className='unbounded-700'>Отримати Підтримку</div></li>
+          <li className='button-ambassador'><div className='cursor unbounded-700 '>Стати Амбасадором</div></li>
+          <li className='cursor b-subscribe' ><div className=' unbounded-700'>Отримати Підтримку</div></li>
         </ul>
         <label style={{color: 'white'}} className={`navbar-toggler ${menu ? '' : 'margin-top-more'}`} onClick={openCloseMenu}>
           <span className={`bar-toggle ${!menu ? '' : 'bar-1'}`}></span>
