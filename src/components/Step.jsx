@@ -19,7 +19,7 @@ const Step = (props) => {
         <div className={!isLast ? `line` : ''}></div>
         </div>
         <div data-aos='fade-up' className='step-desc'>
-          <div  className='date'><div family='Mulish' weight={500}>{date}</div></div>
+          <div  className='date'><div className='mulish-500'>{date}</div></div>
           <div  className='date-2'>
             <div  className='unbounded-700'>{step} <br/> {title}</div>
           </div>

@@ -113,8 +113,8 @@ const Subscribe = () => {
         <div className='c-112087'><div className='unbounded-700'>Більше про те, як функціонують Амбасадори тут</div></div>
       </div>
       <div data-aos='fade-up' className='accept-buttons'>
-        <button style={{border: '1px solid #112087'}} className='c-112087'><div className='unbounded-700'>Офіційні Правила</div></button>
-        <button style={{border: 'none'}} className='b-112087 c-faeddd'><div className='unbounded-700'>Стати Амбасадором</div></button>
+        <button style={{border: '1px solid #112087'}} className='cursor second-hover c-112087'><div className='unbounded-700'>Офіційні Правила</div></button>
+        <button style={{border: 'none'}} className='cursor hover-16279D b-112087 c-faeddd'><div className='unbounded-700'>Стати Амбасадором</div></button>
       </div>
     </div>
         </Container>

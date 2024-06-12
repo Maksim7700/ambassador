@@ -26,22 +26,6 @@
 
 }
 
-.a-s-hover {
-  background-color: #FFDDD1 !important;
-}
-
-.a-a-hover {
-  background-color: #B75431 !important;
-}
-.button-subscribe:hover {
-  background-color: #FFDDD1 !important;
-
-}
-
-.button-ambassador:hover {
-
-}
-
 .c-ad4a27 {
   color: #AD4A27 !important;
 }
@@ -51,6 +35,20 @@
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
+}
+
+.text-hover:hover {
+  color: #FFE6C8 !important;
+}
+
+.second-hover:hover {
+  background-color: #FFE6C8 !important;
+}
+.first-hover:hover {
+  background-color: #B75431 !important;
+}
+.hover-16279D:hover {
+  background-color: #16279D !important;
 }
 
 .c-464442 {
@@ -171,7 +169,6 @@ p {
 
 nav {
   height: 78px;
-  margin: 0 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -540,6 +537,10 @@ progress::-webkit-progress-value {
   margin: 0 16px;
 }
 
+.p-16 {
+  padding: 0 16px;
+}
+
 .b-n {
   border: none;
 }
@@ -682,6 +683,23 @@ progress::-webkit-progress-value {
 
 .path-112087 svg path {
   fill: #112087;
+}
+
+
+.fff-t:hover .button-q button {
+  background-color: #FAEDDD;
+}
+
+.facebook:hover svg rect {
+  fill: #FFE6C8;
+}
+
+.instagram:hover svg path:first-child {
+  fill: #FFE6C8;
+}
+
+.button-q-hover button:hover {
+  background-color: #FAEDDD;
 }
 
 .con {
@@ -1243,6 +1261,7 @@ hr {
   }
 
   .header-mobile {
+    padding: 0;
     display: grid;
     grid-template-columns: 1fr;
   }
@@ -1339,6 +1358,7 @@ hr {
   .accept-info {
     flex-direction: column;
     margin-top: 32px;
+    padding: 0 16px;
   }
 
   .accept-desc {

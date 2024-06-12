@@ -17,7 +17,6 @@ const NavBar = () => {
 
   useEffect(() => {
     if (!menu && animationClass === 'none') {
-      console.log(1);
     } else if  (menu) {
       setAnimationClass('slideUp-header');
     } else {
@@ -33,9 +32,10 @@ const NavBar = () => {
     if(path === '/ambassador'){
       document.querySelector('.header').classList.remove('b-112087');
       document.querySelector('.b-subscribe').classList.remove('c-112087');
-
+      document.querySelector('.first-hover').classList.remove('hover-16279D');
     } else {
       document.querySelector('.header').classList.add('b-112087');
+      document.querySelector('.first-hover').classList.add('hover-16279D');
       document.querySelector('.b-subscribe').classList.add('c-112087');
     }
   }
@@ -44,11 +44,13 @@ const NavBar = () => {
     if(history.location.pathname === '/ambassador'){
       document.querySelector('.header').classList.remove('b-112087');
       document.querySelector('.b-subscribe').classList.remove('c-112087');
+      document.querySelector('.first-hover').classList.remove('hover-16279D');
     } else {
+      document.querySelector('.first-hover').classList.add('hover-16279D');
       document.querySelector('.header').classList.add('b-112087');
       document.querySelector('.b-subscribe').classList.add('c-112087');
     }
-  }, [history.location]);
+  }, [history.location, history.location.pathname]);
 
   const changeBackground = () => {
     if (window.scrollY > 50) {
@@ -59,21 +61,20 @@ const NavBar = () => {
   }
   window.addEventListener('scroll', changeBackground);
 
-
   return (
     <Wrapper className={`main ${history.location.pathname === '/ambassador' ? '': 'c-112087'} header`}>
-    <Container className='header-mobile'>
+    <Container className='p-16 header-mobile'>
       <nav>
         <ul>
           <li onClick={() => navigateTo('/ambassador')}><img src={logo} alt='Abmassador'></img></li>
-          <li><div onClick={() => navigateTo('/ambassador')} className='cursor unbounded-700'>Грантова Програма</div></li>
-          <li><div onClick={() => navigateTo('/subscribe')}className='cursor unbounded-700'>Амбасадори Дрогобича</div></li>
+          <li><div onClick={() => navigateTo('/ambassador')} className='text-hover c-faeddd cursor unbounded-700'>Грантова Програма</div></li>
+          <li><div onClick={() => navigateTo('/subscribe')}className='text-hover c-faeddd cursor unbounded-700'>Амбасадори Дрогобича</div></li>
         </ul>
         <ul>
-          <li className='button-ambassador'><div className='cursor unbounded-700 '>Стати Амбасадором</div></li>
-          <li className='cursor b-subscribe' ><div className=' unbounded-700'>Отримати Підтримку</div></li>
+          <li className='first-hover '><div className='cursor unbounded-700 '>Стати Амбасадором</div></li>
+          <li className='second-hover cursor b-subscribe' ><div className='unbounded-700'>Отримати Підтримку</div></li>
         </ul>
-        <label style={{color: 'white'}} className={`navbar-toggler ${menu ? '' : 'margin-top-more'}`} onClick={openCloseMenu}>
+        <label style={{color: 'white'}} className={`cursor navbar-toggler ${menu ? '' : 'margin-top-more'}`} onClick={openCloseMenu}>
           <span className={`bar-toggle ${!menu ? '' : 'bar-1'}`}></span>
           <span className={`bar-toggle ${!menu ? '' : 'bar-2'}`}></span>
           <span className={`bar-toggle ${!menu ? '' : 'bar-3'}`}></span>

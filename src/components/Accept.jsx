@@ -19,8 +19,8 @@ const Accept = () => {
         </div>
       </div>
       <div data-aos='fade-up' className='accept-buttons'>
-        <button className='cursor button-ambassador'><div className='unbounded-700'>Офіційні Правила</div></button>
-        <button className='cursor button-subscribe'><div className='unbounded-700'>Отримати Підтримку</div></button>
+        <button className='cursor first-hover'><div className='unbounded-700'>Офіційні Правила</div></button>
+        <button className='cursor second-hover'><div className='unbounded-700'>Отримати Підтримку</div></button>
       </div>
       </div>
     </div></>

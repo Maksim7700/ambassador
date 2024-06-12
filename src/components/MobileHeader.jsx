@@ -8,9 +8,6 @@ const MobileHeader = (props) => {
 
   const {animationClass} = props;
 
-  console.log(animationClass)
-
-
   const navigateTo = (path) => {
     history.push(path);
     if(path === '/ambassador'){
@@ -35,6 +32,7 @@ const MobileHeader = (props) => {
       document.querySelector('.b-g').classList.remove('b-112087');
       document.querySelector('.mobile-menu-list').classList.remove('b-112087');
       document.querySelector('.s-c').classList.remove('c-112087');
+
     } else {
       document.querySelector('.header').classList.add('b-112087');
       document.querySelector('.b-subscribe').classList.add('c-112087');
@@ -42,13 +40,13 @@ const MobileHeader = (props) => {
       document.querySelector('.mobile-menu-list').classList.add('b-112087');
       document.querySelector('.s-c').classList.add('c-112087');
     }
-  }, [history.location.pathname])
+  }, [history.location.pathname, animationClass])
 
   return (
     <Wrapper className='b-g'>
       <Wrapper className='mp-16'>
-    <div className={`mobile-menu ${animationClass}`}>
-          <div className={`mobile-menu-list`}>
+    <div className={`mobile-menu `}>
+          <div className={`mobile-menu-list ${animationClass}`}>
             <div onClick={() => navigateTo('/ambassador')}><div className='f-s-16 l-h-24  unbounded-700'>Грантова Програма</div></div>
             <div onClick={() => navigateTo('/subscribe')}><div className='f-s-16 l-h-24 unbounded-700'>Амбасадори</div></div>
             <div><button className='f-s-16 l-h-24 unbounded-700'>Стати Амбасадором</button></div>
