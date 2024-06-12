@@ -47,7 +47,7 @@ const Subscribe = () => {
       <Wrapper className='p-150 ambassador b-112087'>
         <Wrapper className='mp-16'>
         <Container className='progress-container-block'>
-        <div data-aos='fade-up' className='ambassador-finance unbounded-700'>
+        <div data-aos='fade-up' className='word-wrap-example ambassador-finance unbounded-700'>
         МИ ШУКАЄМО 100 ЛЮДЕЙ, ЯКІ ЗМІНЮВАТИМУТЬ ДРОГОБИЧ
             </div>
             <div data-aos='fade-up'>
