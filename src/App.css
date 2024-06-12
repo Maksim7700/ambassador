@@ -13,6 +13,10 @@
   cursor: pointer;
 }
 
+.none {
+  display: none;
+}
+
 .s-s-hover {
   background-color: #FFDDD1;
 }
@@ -57,16 +61,38 @@
   padding-top: 0 !important;
 }
 
-.mobile-menu {
-  transform: translateX(-100%); /* Start to the left of the viewport */
-  animation: slideIn .3s forwards;
-}
 
 @keyframes slideIn {
   to {
     transform: translateX(0); /* End at the original position */
   }
 }
+
+@keyframes slideUpOut {
+  from {
+    max-height: 500px; /* Adjust according to your content */
+    opacity: 1;
+  }
+  to {
+    max-height: 0;
+    opacity: 0;
+  }
+}
+@keyframes slideUp {
+  0% {
+    max-height: 0;
+    opacity: 0;
+  }
+  50% {
+    max-height: 250px; /* Adjust according to your content */
+    opacity: 1;
+  }
+  100% {
+    max-height: 500px; /* Adjust according to your content */
+    opacity: 1;
+  }
+}
+
 
 .b-g {
   background-color: #AD4A27;
@@ -152,6 +178,16 @@ nav {
   color: white;
 }
 
+
+.q-desc {
+  transform: translateY(0);
+  animation: slideUp 3s forwards;
+}
+
+.slideFadeOut{
+  animation: slideUpOut 0.5s forwards;
+}
+
 .header nav ul {
   display: flex;
   list-style: none;
@@ -232,6 +268,10 @@ nav li {
 .about-grand {
   background-color: #FAEDDD;
   color: #FAEDDD;
+}
+
+.none {
+  display: none !important;
 }
 
 .about-grand p {
@@ -523,6 +563,35 @@ progress::-webkit-progress-value {
   justify-content: space-between;
 }
 
+
+.slideUpOut-header {
+  animation: slideOff-header 0.5s forwards;
+}
+.slideUp-header {
+  animation: slideUp-header 1.3s forwards;
+}
+
+@keyframes slideOff-header {
+  from {
+    max-height: 500px; /* Adjust according to your content */
+    opacity: 1;
+  }
+  to {
+    max-height: 0;
+    opacity: 0;
+  }
+}
+@keyframes slideUp-header {
+  0% {
+    max-height: 0;
+    opacity: 0;
+  }
+  100% {
+    max-height: 500px; /* Adjust according to your content */
+    opacity: 1;
+  }
+}
+
 .asssesment-info div:nth-child(1) {
   border-right: none;
 }
@@ -580,10 +649,6 @@ progress::-webkit-progress-value {
   line-height: 27px;
   color: #FFFFFF;
   padding-top: 0px !important;
-}
-
-.none {
-  display: none !important;
 }
 
 .pb-20 {
@@ -1419,6 +1484,7 @@ hr {
     padding: 0 !important;
     border-right: 1px solid rgba(173, 74, 39, 0.5) !important;
   }
+
 }
 
 @media (prefers-reduced-motion: no-preference) {

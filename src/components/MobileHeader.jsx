@@ -2,9 +2,13 @@ import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 import Wrapper from '../UI/Wrapper';
 import { useEffect } from 'react';
 
-const MobileHeader = () => {
+const MobileHeader = (props) => {
 
   const history = useHistory();
+
+  const {animationClass} = props;
+
+  console.log(animationClass)
 
 
   const navigateTo = (path) => {
@@ -43,7 +47,7 @@ const MobileHeader = () => {
   return (
     <Wrapper className='b-g'>
       <Wrapper className='mp-16'>
-    <div className='mobile-menu'>
+    <div className={`mobile-menu ${animationClass}`}>
           <div className={`mobile-menu-list`}>
             <div onClick={() => navigateTo('/ambassador')}><div className='f-s-16 l-h-24  unbounded-700'>Грантова Програма</div></div>
             <div onClick={() => navigateTo('/subscribe')}><div className='f-s-16 l-h-24 unbounded-700'>Амбасадори</div></div>

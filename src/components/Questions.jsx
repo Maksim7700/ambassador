@@ -6,15 +6,30 @@ import { useEffect } from 'react';
 
 const Questions = (props) => {
 
+  const [animationClass, setAnimationClass] = useState('none');
+  const [isOpen, setIsOpen] = useState(false);
+
   useEffect(() => {
     AOS.init();
   });
 
+  useEffect(() => {
+    if (!isOpen && animationClass === 'none') {
+    } else
+    if (isOpen) {
+      setAnimationClass('slideFadeIn');
+    } else {
+      setAnimationClass('slideFadeOut');
+    }
+  }, [animationClass, isOpen]);
+
+
   const history = useHistory();
 
-  const [isOpen, setIsOpen] = useState(false);
 
   const {title, desc} = props;
+
+
 
   return (
     <div data-aos='fade-up' className={`question `} onClick={() => setIsOpen(!isOpen)}>
@@ -23,7 +38,7 @@ const Questions = (props) => {
         <div className='button-q'><button className={`${isOpen ? 'transparent-button' : ''}`}><img src={`${!isOpen ? history.location.pathname !== '/subscribe' ? '../images/plus.svg' : '../images/plus-subscribe.svg' : '../images/minus.svg'}`} alt='INFO' /></button></div>
       </div>
       <div className='part2'>
-      <div className={`q-desc ${isOpen ? '' : 'none'}`}><div className='mulish-400'>{isOpen && desc}</div></div>
+      <div className={`q-desc ${animationClass}`}><div className='mulish-400'>{desc}</div></div>
       </div>
     </div>
   );

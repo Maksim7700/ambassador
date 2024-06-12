@@ -13,6 +13,18 @@ const NavBar = () => {
     setMenu(!menu);
   }
 
+  const [animationClass, setAnimationClass] = useState('none');
+
+  useEffect(() => {
+    if (!menu && animationClass === 'none') {
+      console.log(1);
+    } else if  (menu) {
+      setAnimationClass('slideUp-header');
+    } else {
+      setAnimationClass('slideUpOut-header');
+    }
+  }, [animationClass, menu]);
+
   const navigateTo = (path) => {
     history.push(path);
     window.scrollTo({
@@ -67,7 +79,7 @@ const NavBar = () => {
           <span className={`bar-toggle ${!menu ? '' : 'bar-3'}`}></span>
         </label>
       </nav>
-      {menu && <MobileHeader/>}
+      {<MobileHeader animationClass={animationClass}/>}
     </Container>
     </Wrapper>
   )
