@@ -97,14 +97,15 @@
 }
 .mobile-menu-list {
   background-color: #AD4A27;
-  padding-top: 16px;
-  padding-bottom: 16px;
   width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: left;
   gap: 32px;
+}
+.mobile-menu-list div:nth-child(1) {
+  margin-top: 10px;
 }
 
 .mobile-menu-list div {
@@ -574,7 +575,7 @@ progress::-webkit-progress-value {
 
 @keyframes slideOff-header {
   from {
-    max-height: 500px; /* Adjust according to your content */
+    max-height: 500px;
     opacity: 1;
   }
   to {
@@ -1097,6 +1098,10 @@ hr {
 }
 .m-b-24 {
   margin-bottom: 24px;
+}
+.m-b-16 {
+  margin-bottom: 16px;
+
 }
 .m-t-24 {
   margin-top: 24px;

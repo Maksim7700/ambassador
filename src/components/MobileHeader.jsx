@@ -50,7 +50,7 @@ const MobileHeader = (props) => {
             <div onClick={() => navigateTo('/ambassador')}><div className='f-s-16 l-h-24  unbounded-700'>Грантова Програма</div></div>
             <div onClick={() => navigateTo('/subscribe')}><div className='f-s-16 l-h-24 unbounded-700'>Амбасадори</div></div>
             <div><button className='f-s-16 l-h-24 unbounded-700'>Стати Амбасадором</button></div>
-            <div><button className='s-c b-faeddd c-ad4a27 f-s-16 l-h-24 unbounded-700'>Отримати Підтримку</button></div>
+            <div><button className='s-c b-faeddd c-ad4a27 f-s-16 l-h-24 unbounded-700 m-b-16'>Отримати Підтримку</button></div>
           </div>
         </div>
         </Wrapper>
