@@ -69,14 +69,14 @@ const Abmassador = () => {
       <Wrapper className='accept'>
         <Wrapper className='mp-16'>
           <Container>
-            <Accept />
+            <Accept title={'ЯК ПОДАТИСЬ?'} id='accept-move'/>
           </Container>
         </Wrapper>
       </Wrapper>
       <Wrapper className='assesment'>
         <Wrapper className='mp-16'>
           <Container>
-            <Assessment/>
+            <Assessment id='move-accept'/>
           </Container>
         </Wrapper>
       </Wrapper>

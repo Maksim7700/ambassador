@@ -2,14 +2,14 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 
-const Accept = () => {
+const Accept = (props) => {
 
   useEffect(() => {
     AOS.init();
   });
 
   return (
-    <><div data-aos='fade-up' className='accept-title'><div className='unbounded-700'>ЯК ПОДАТИСЬ?</div></div>
+    <><div id={props.id} data-aos='fade-up' className='accept-title'><div className='unbounded-700'>{props.title}</div></div>
     <div data-aos='fade-up' className='accept-info'>
       <div data-aos='fade-up' className='accept-info-inside-box'>
       <div data-aos='fade-up' className='accept-desc l-h-27'>

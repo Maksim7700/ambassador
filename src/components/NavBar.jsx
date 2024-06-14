@@ -4,6 +4,7 @@ import logo from '../images/logo.svg';
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 import { useEffect, useState } from 'react';
 import MobileHeader from './MobileHeader';
+import { Link as Scroll } from 'react-scroll';
 
 const NavBar = () => {
   const history = useHistory();
@@ -63,16 +64,31 @@ const NavBar = () => {
 
   return (
     <Wrapper className={`main ${history.location.pathname === '/ambassador' ? '': 'c-112087'} header`}>
-    <Container className='p-16 header-mobile'>
+    <Container className='p-l-16 p-r-16 header-mobile'>
       <nav>
         <ul>
           <li onClick={() => navigateTo('/ambassador')}><img src={logo} alt='Abmassador'></img></li>
-          <li><div onClick={() => navigateTo('/ambassador')} className='text-hover c-faeddd cursor unbounded-700'>Грантова Програма</div></li>
+          <li><div onClick={() => navigateTo('/ambassador')} className='text-hover c-faeddd cursor unbounded-700'>
+          Грантова Програма</div></li>
           <li><div onClick={() => navigateTo('/subscribe')}className='text-hover c-faeddd cursor unbounded-700'>Амбасадори Дрогобича</div></li>
         </ul>
         <ul>
-          <li className='first-hover '><div className='cursor unbounded-700 '>Стати Амбасадором</div></li>
-          <li className='second-hover cursor b-subscribe' ><div className='unbounded-700'>Отримати Підтримку</div></li>
+        <li className='first-hover'><Scroll onClick={() => {
+          navigateTo('/subscribe')
+          setTimeout(() => {
+            document.getElementById('follows').scrollIntoView({behavior: 'smooth'});
+          }, 500);
+        }
+      } to="follows" spy={true} smooth={true}><div className='cursor unbounded-700 '>Стати Амбасадором</div></Scroll></li>
+          <li className='second-hover cursor b-subscribe' >
+          <Scroll onClick={() => {
+          navigateTo('/ambassador')
+          setTimeout(() => {
+            document.getElementById('accept-move').scrollIntoView({behavior: 'smooth'});
+          }, 500);
+        }
+      } to="accept-move" spy={true} smooth={true}>
+        <div className='unbounded-700'>Отримати Підтримку</div></Scroll></li>
         </ul>
         <label style={{color: 'white'}} className={`cursor navbar-toggler ${menu ? '' : 'margin-top-more'}`} onClick={openCloseMenu}>
           <span className={`bar-toggle ${!menu ? '' : 'bar-1'}`}></span>

@@ -20,7 +20,7 @@ const Subscribe = () => {
       <Wrapper className='p-64 ambassador b-112087'>
         <Wrapper className='mp-16'>
         <Container className='containter-sub-top'>
-        <div data-aos='fade-up' className='ambassador-finance unbounded-700'>
+        <div data-aos='fade-up' className='word-wrap-example ambassador-finance unbounded-700'>
               ДОЛУЧИСЬ ДО РОЗВИТКУ МІСТА
             </div>
             <div data-aos='fade-up'>
@@ -32,14 +32,14 @@ const Subscribe = () => {
       <Wrapper className='about-grand'>
           <Wrapper className='about-grand-background mp-16'>
             <Container className='about-grand-containte'>
-              <div data-aos='fade-up' className='about-grand-title c-112087 unbounded-700'>
+              <div data-aos='fade-up' className='word-wrap-example about-grand-title c-112087 unbounded-700'>
               АМБАСАДОРИ ДРОГОБИЧА -
               </div>
               <div data-aos='fade-up' className='about-grand-title unbounded-700'>
-              <span data-aos='fade-up' className='c-2b2624'>ЦЕ СПІЛЬНОТА ЛЮДЕЙ,</span>
+              <span data-aos='fade-up' className='c-2b2624 word-wrap-example'>ЦЕ СПІЛЬНОТА ЛЮДЕЙ,</span>
               </div>
-              <div data-aos='fade-up' className='subscribe-support c-2b2624 m-t-32 f-s-40 l-h-60 unbounded-700'>
-                  ЯКІ ОБʼЄДНАЛИСЯ ДЛЯ ПІДТРИМКИ ПРОЄКТІВ РОЗВИТКУ <span className='c-112087'>ДРОГОБИЧА</span>
+              <div data-aos='fade-up' className='word-wrap-example subscribe-support c-2b2624 m-t-32 f-s-40 l-h-60 unbounded-700'>
+                  ЯКІ ОБʼЄДНАЛИСЯ ДЛЯ ПІДТРИМКИ <span className='word-wrap-example c-112087'>МІСЬКИХ ПРОЄКТІВ </span>
               </div>
             </Container>
           </Wrapper>
@@ -50,8 +50,11 @@ const Subscribe = () => {
         <div data-aos='fade-up' className='word-wrap-example ambassador-finance unbounded-700'>
         МИ ШУКАЄМО 100 ЛЮДЕЙ, ЯКІ ЗМІНЮВАТИМУТЬ ДРОГОБИЧ
             </div>
-            <div data-aos='fade-up'>
+            <div data-aos='fade-up' className='loading'>
+              <div>
               <img src={'./images/100.svg'} alt="Грантова програма"></img>
+              </div>
+              <div className='unbounded-700'>Наша ціль: створити прозорий цільовий фонд, призначений для фінансування соціальних проєктів та стартапів, спрямованих на розвиток міста</div>
             </div>
             <div data-aos='fade-up'>
             <progress style={{width: '100%', height: '17px'}} value="85" max="100" />
@@ -63,7 +66,7 @@ const Subscribe = () => {
       <Wrapper className='b-faeddd target-container p-150'>
         <Wrapper className='mp-16'>
         <Container>
-          <div data-aos='fade-up' className=' target-subscribe-title m-b-64 f-s-64 l-h-96 c-2b2624 unbounded-700'>
+          <div id='follows' data-aos='fade-up' className='word-wrap-example target-subscribe-title m-b-64 f-s-64 l-h-96 c-2b2624 unbounded-700'>
             ДОЛУЧИТИСЬ ДО АМБАСАДОРІВ
           </div>
           <div data-aos='fade-up' className='target-subscribe-box d-flex gap-16 j-c-center'>
@@ -95,7 +98,7 @@ const Subscribe = () => {
         <Wrapper className='mp-16'>
 
         <Container>
-        <div data-aos='fade-up' className='projects c-faeddd f-s-64 l-h-96 m-b-64'><div className='unbounded-700'>ЯКІ ПРОЄКТИ БУЛИ ПІДТРИМАНІ?</div></div>
+        <div data-aos='fade-up' className='projects c-faeddd f-s-64 l-h-96 m-b-64'><div className='word-wrap-example unbounded-700'>ЯКІ ПРОЄКТИ БУЛИ ПІДТРИМАНІ?</div></div>
         <div data-aos='fade-up' style={{textAlign: 'center'}} className='p-64 c-faeddd project-box'><div className='unbounded-700'>Зовсім скоро тут з*являться перші проєкти</div></div>
         </Container>
         </Wrapper>
@@ -105,8 +108,8 @@ const Subscribe = () => {
         <Wrapper className='mp-16'>
 
         <Container>
-        <div data-aos='fade-up' className='ambassador-finance c-2b2624 t-a-center unbounded-700'>
-        ЯК ПОДАТИСЬ?
+        <div data-aos='fade-up' className='ambassador-finance c-2b2624 t-a-center unbounded-700 word-wrap-example'>
+        ЯК МИ ФУНКЦІОНУЄМО?
             </div>
             <div data-aos='fade-up' className='accept-info border-122087'>
       <div data-aos='fade-up' className='accept-desc'>

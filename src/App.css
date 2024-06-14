@@ -13,6 +13,11 @@
   cursor: pointer;
 }
 
+.word-wrap-example {
+  word-wrap: break-word !important; /* Для старших версій браузерів */
+  overflow-wrap: break-word !important; /* Для сучасних версій браузерів */
+}
+
 .none {
   display: none;
 }
@@ -169,6 +174,8 @@ p {
 }
 
 nav {
+  padding-left: 16px;
+  padding-right: 16px;
   height: 78px;
   display: flex;
   justify-content: space-between;
@@ -235,9 +242,28 @@ nav li {
 }
 
 .ambassador-finance {
+  display: flex;
   color: #FAEDDD;
   line-height: 96px;
   font-size: 64px;
+}
+
+.loading div:nth-child(2) {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  text-align: left;
+  color: #FAEDDD;
+  font-size: 20px;
+  line-height: 30px;
+  max-width: 890px;
+}
+
+.loading {
+  display: flex;
+  gap: 64px;
+  flex-direction: row;
 }
 
 .p-150 {
@@ -691,6 +717,10 @@ progress::-webkit-progress-value {
   background-color: #FAEDDD;
 }
 
+.fff-t:hover .q-text div {
+  color: #FFE6C8;
+}
+
 .facebook:hover svg rect {
   fill: #FFE6C8;
 }
@@ -970,7 +1000,7 @@ hr {
 }
 
 .step-desc div:nth-child(1) {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 30px;
   color: #AD4A27;
 }
@@ -981,6 +1011,21 @@ hr {
   color: #464442;
   font-size: 18px;
   line-height: 27px;
+}
+
+.bigshare:hover svg path {
+  fill: #FFE6C8;
+}
+
+.vul:hover div {
+  color:#FFE6C8;
+}
+
+.phone:hover div {
+  color: #FFE6C8;
+}
+.security div b:hover {
+  color: #FFE6C8;
 }
 
 .card-target-grid-container-subscribe {
@@ -1078,6 +1123,13 @@ hr {
 
 .gap-16 {
   gap: 16px;
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  gap: 32px;
 }
 
 .l-h-27 {
@@ -1235,8 +1287,8 @@ hr {
   }
 
   .word-wrap-example {
-    word-wrap: break-word; /* Для старших версій браузерів */
-    overflow-wrap: break-word; /* Для сучасних версій браузерів */
+    word-wrap: break-word !important; /* Для старших версій браузерів */
+    overflow-wrap: break-word !important; /* Для сучасних версій браузерів */
 }
 
   .target-cards {
