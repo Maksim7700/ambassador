@@ -14,6 +14,7 @@
 }
 
 .word-wrap-example {
+  white-space: pre-wrap; /* Сохранение пробелов и переносов строк */
   word-wrap: break-word !important; /* Для старших версій браузерів */
   overflow-wrap: break-word !important; /* Для сучасних версій браузерів */
 }
@@ -241,8 +242,8 @@ nav li {
   text-align: center;
 }
 
+
 .ambassador-finance {
-  display: flex;
   color: #FAEDDD;
   line-height: 96px;
   font-size: 64px;

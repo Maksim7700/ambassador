@@ -1,6 +1,7 @@
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 import Wrapper from '../UI/Wrapper';
 import { useEffect } from 'react';
+import {Link as Scroll} from 'react-scroll';
 
 const MobileHeader = (props) => {
 
@@ -49,7 +50,13 @@ const MobileHeader = (props) => {
           <div className={`mobile-menu-list ${animationClass}`}>
             <div onClick={() => navigateTo('/ambassador')}><div className='f-s-16 l-h-24  unbounded-700'>Грантова Програма</div></div>
             <div onClick={() => navigateTo('/subscribe')}><div className='f-s-16 l-h-24 unbounded-700'>Амбасадори</div></div>
-            <div><button className='f-s-16 l-h-24 unbounded-700'>Стати Амбасадором</button></div>
+            <div><Scroll onClick={() => {
+          navigateTo('/subscribe')
+          setTimeout(() => {
+            document.getElementById('follows').scrollIntoView({behavior: 'smooth'});
+          }, 500);
+        }
+      } to="follows" spy={true} smooth={true}><button className='f-s-16 l-h-24 unbounded-700'>Стати Амбасадором</button></Scroll></div>
             <div><button className='s-c b-faeddd c-ad4a27 f-s-16 l-h-24 unbounded-700 m-b-16'>Отримати Підтримку</button></div>
           </div>
         </div>

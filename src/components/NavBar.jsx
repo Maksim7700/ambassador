@@ -81,14 +81,8 @@ const NavBar = () => {
         }
       } to="follows" spy={true} smooth={true}><div className='cursor unbounded-700 '>Стати Амбасадором</div></Scroll></li>
           <li className='second-hover cursor b-subscribe' >
-          <Scroll onClick={() => {
-          navigateTo('/ambassador')
-          setTimeout(() => {
-            document.getElementById('accept-move').scrollIntoView({behavior: 'smooth'});
-          }, 500);
-        }
-      } to="accept-move" spy={true} smooth={true}>
-        <div className='unbounded-700'>Отримати Підтримку</div></Scroll></li>
+
+        <div className='unbounded-700'>Отримати Підтримку</div></li>
         </ul>
         <label style={{color: 'white'}} className={`cursor navbar-toggler ${menu ? '' : 'margin-top-more'}`} onClick={openCloseMenu}>
           <span className={`bar-toggle ${!menu ? '' : 'bar-1'}`}></span>
