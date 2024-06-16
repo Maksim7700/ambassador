@@ -19,7 +19,7 @@ const Footer = () => {
         <div className='contact'>
           <div className='con'>
             <a href="https://www.google.com/maps/place/Vasylya+Stusa+St,+39,+Drohobych,+L'vivs'ka+oblast,+82100/@49.3642382,23.5041877,17z/data=!3m1!4b1!4m6!3m5!1s0x473a4c25e8e1ec91:0x4167b0111c611d75!8m2!3d49.3642347!4d23.5067626!16s%2Fg%2F11j8n1j7ns?entry=ttu" target='_blank' rel="noreferrer"><div className='vul cursor'><div className='unbounded-700'>вул. Василя Стуса, 39</div></div></a>
-            <div className='phone cursor'><div className='unbounded-700'>+380 50 762 88 15</div></div>
+            <div className='phone cursor'><div className='unbounded-700'>+380 68 67 49 909</div></div>
           </div>
           <div className='social'>
             <div className='news'><div className='unbounded-700'>Підпишись на остінні новини:</div></div>
