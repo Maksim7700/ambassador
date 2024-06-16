@@ -15,7 +15,7 @@ const Accept = (props) => {
       <div data-aos='fade-up' className='accept-desc l-h-27'>
         <div data-aos='fade-up' className='accept-desc-inside-box'>
         <div data-aos='fade-up'><div className='mulish-400'>1. Завантажте форму заявки та бюджету.</div></div>
-        <div data-aos='fade-up'><div className='mulish-400'>2. Надішліть заповнені документи на <u><b>grants@dyma.foundation</b></u> з темою листа «Амбасадори Дрогобича_Заявка на ґрант”</div></div>
+        <div data-aos='fade-up'><div className='mulish-400'>2. Надішліть заповнені документи на <u><b><a style={{color: '#FFFFFF'}} href='https://mail.google.com/mail/u/0/#inbox?compose=jrjtXLCPZZsnQzHwlLBrDGcNsNpwRnkCsWGRDjwwKCWgvvxtrrDTVsQsXlzSqSvSgdPqkSWQ' target='_blank' rel="noreferrer">grants@dyma.foundation</a></b></u> з темою листа «Амбасадори Дрогобича_Заявка на ґрант”</div></div>
         </div>
       </div>
       <div data-aos='fade-up' className='accept-buttons'>
