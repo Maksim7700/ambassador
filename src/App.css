@@ -249,6 +249,10 @@ nav li {
   font-size: 64px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .loading div:nth-child(2) {
   text-transform: uppercase;
   display: flex;
