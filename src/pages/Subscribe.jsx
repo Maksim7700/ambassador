@@ -48,6 +48,7 @@ const Subscribe = () => {
         <Wrapper className='mp-16'>
         <Container className='progress-container-block'>
         <div data-aos='fade-up' className='word-wrap-example ambassador-finance unbounded-700'>
+        <div className='months-6 unbounded-700'>КОЖНІ 6 МІСЯЦІВ</div>
         МИ ШУКАЄМО 100 ЛЮДЕЙ, ЯКІ ЗМІНЮВАТИМУТЬ ДРОГОБИЧ
             </div>
             <div data-aos='fade-up' className='loading'>

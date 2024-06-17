@@ -784,6 +784,12 @@ progress::-webkit-progress-value {
 }
 
 
+.logo {
+  max-height: 67px;
+  max-width: 170px;
+  height: 100%;
+  width: 100%;
+}
 .logos {
   margin-top: 64px;
   padding-left: 38px;
@@ -865,6 +871,11 @@ hr {
   gap: 12px;
 }
 
+.months-6 {
+  font-size: 40px;
+  line-height: 60px;
+  padding-bottom: 32px;
+}
 
 .ad {
   padding-top: 24px;
@@ -1132,7 +1143,7 @@ hr {
 
 .loading {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   max-width: 100%;
   gap: 32px;
 }
@@ -1490,11 +1501,21 @@ hr {
 
   }
 
+  .loading {
+    flex-direction: column;
+  }
+
   .logos {
     margin-top: 32px;
     display: grid;
     grid-template-columns: repeat(2, minmax(100px, 443px));
     gap: 24px
+  }
+
+  .months-6{
+    padding-bottom: 16px;
+    font-size: 22px;
+    line-height: 33px;
   }
 
   .footer-a {

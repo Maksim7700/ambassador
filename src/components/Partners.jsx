@@ -10,14 +10,14 @@ const Partners = () => {
 
     return (
         <div data-aos='fade-up' className='partner-title'>
-            <div data-aos='fade-up' className='unbounded-700'>НАШІ ПАРТНЕРИ</div>
+            <div data-aos='fade-up' className='unbounded-700'>ПАРТНЕРИ І ТІ, ХТО НАДИХАВ</div>
             <div className='logos'>
               <div className='logo'><img src='images/logo1.svg' alt='logo'></img></div>
               <div className='logo'><img src='images/logo2.svg' alt='logo'></img></div>
-              <div className='logo'><img src='images/logo1.svg' alt='logo'></img></div>
+              <div className='logo'><img src='images/teple_misto.png' alt='logo'></img></div>
               <div className='logo'><img src='images/logo2.svg' alt='logo'></img></div>
               <div className='logo'><img src='images/logo1.svg' alt='logo'></img></div>
-              <div className='logo'><img src='images/logo2.svg' alt='logo'></img></div>
+              <div className='logo'><img src='images/teple_misto.png' alt='logo'></img></div>
               </div>
         </div>
     )
