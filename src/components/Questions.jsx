@@ -32,12 +32,12 @@ const Questions = (props) => {
 
 
   return (
-    <div data-aos='fade-up' className={`question `} onClick={() => setIsOpen(!isOpen)}>
-      <div className={`part-1 cursor ${!isOpen ? 'fff-t': ''}`}>
+    <div data-aos='fade-up' className={`question `} >
+      <div className={`part-1 cursor ${!isOpen ? 'fff-t': ''}`} onClick={() => setIsOpen(!isOpen)}>
         <div className='q-text'><div className='unbounded-700'>{title}</div></div>
         <div className={`button-q ${!isOpen ? 'button-q-hover': ''}`}><button className={`cursor ${isOpen ? 'transparent-button' : ''}`}><img src={`${!isOpen ? history.location.pathname !== '/subscribe' ? '../images/plus.svg' : '../images/plus-subscribe.svg' : '../images/minus.svg'}`} alt='INFO' /></button></div>
       </div>
-      <div className='part2'>
+      <div className={`part2 ${isOpen ? '' : 'min-h'}`}>
       <div className={`q-desc ${animationClass}`}><div className='mulish-400'>{desc}</div></div>
       </div>
     </div>
