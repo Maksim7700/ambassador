@@ -1,5 +1,8 @@
 import Wrapper from '../UI/Wrapper';
-import grand from '../images/grand.svg';
+import an1 from '../images/an1.svg'
+import an2 from '../images/an2.svg'
+import an3 from '../images/an3.svg'
+import an4 from '../images/an4.svg'
 import Container from '../UI/Container';
 import Card from '../components/Card';
 import StepProgressBar from '../components/StepProgressBar';
@@ -10,9 +13,21 @@ import Partners from '../components/Partners';
 import Footer from '../components/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 const Abmassador = () => {
+
+  const images = [an4, an2, an1, an3];
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex(prevIndex => (prevIndex + 1) % 4);
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   useEffect(() => {
     AOS.init();
@@ -27,7 +42,7 @@ const Abmassador = () => {
               ОТРИМАЙ ФІНАНСУВАННЯ НА ВТІЛЕННЯ ВЛАСНОГО ПРОЕКТУ
             </div>
             <div data-aos='fade-up' className='p-b-64'>
-              <img src={grand} alt="Грантова програма"></img>
+              <img src={images[currentImageIndex]} alt="Грантова програма"></img>
             </div>
           </Container>
           </Wrapper>

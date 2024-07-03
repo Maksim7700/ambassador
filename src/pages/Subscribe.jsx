@@ -1,19 +1,34 @@
 import Container from '../UI/Container';
 import Wrapper from '../UI/Wrapper';
-import grand from '../images/grand.svg';
 import CardSubscribe from '../components/CardSubscribe';
 import Questions from '../components/Questions';
 import Partners from '../components/Partners';
 import Footer from '../components/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import an1 from '../images/an1.svg'
+import an2 from '../images/an2.svg'
+import an3 from '../images/an3.svg'
+import an4 from '../images/an4.svg'
 
 const Subscribe = () => {
 
   useEffect(() => {
     AOS.init();
   });
+
+  const images = [an4, an2, an1, an3];
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex(prevIndex => (prevIndex + 1) % 4);
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <Wrapper>
@@ -24,7 +39,7 @@ const Subscribe = () => {
               ДОЛУЧИСЬ ДО РОЗВИТКУ МІСТА
             </div>
             <div data-aos='fade-up'>
-              <img src={grand} alt="Грантова програма"></img>
+              <img src={images[currentImageIndex]} alt="Грантова програма"></img>
             </div>
         </Container>
         </Wrapper>
