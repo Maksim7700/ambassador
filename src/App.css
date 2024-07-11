@@ -284,7 +284,8 @@ a {
 }
 
 .ambassador img {
-  max-width: 100%;
+  max-width: 604px;
+  width: 100%;
   height: auto;
 }
 
