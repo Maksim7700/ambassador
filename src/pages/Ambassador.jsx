@@ -24,7 +24,7 @@ const Abmassador = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex(prevIndex => (prevIndex + 1) % 4);
-    }, 2000);
+    }, 900);
 
     return () => clearInterval(interval);
   }, []);

@@ -25,7 +25,7 @@ const Subscribe = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex(prevIndex => (prevIndex + 1) % 4);
-    }, 2000);
+    }, 800);
 
     return () => clearInterval(interval);
   }, []);
